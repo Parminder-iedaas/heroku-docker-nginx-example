@@ -5,4 +5,22 @@ server {
     root   /usr/share/nginx/html;
     index  index.html index.htm;
   }
+  location /user {
+    proxy_pass http://ec2-13-127-149-105.ap-south-1.compute.amazonaws.com:8082;
+  }
+  location /task {
+    proxy_pass http://ec2-13-232-242-139.ap-south-1.compute.amazonaws.com:8083;
+  }
+  location /checklist {
+    proxy_pass http://ec2-65-0-89-106.ap-south-1.compute.amazonaws.com:8081;
+  }
+  location /checklistRequest {
+    proxy_pass http://ec2-15-206-172-53.ap-south-1.compute.amazonaws.com:8080;
+  }
+  location /notification {
+    proxy_pass http://ec2-3-111-58-234.ap-south-1.compute.amazonaws.com:8084;
+  }
+  location /comment {
+    proxy_pass http://ec2-65-0-89-106.ap-south-1.compute.amazonaws.com:8081;
+  }
 }
