@@ -16,11 +16,22 @@ You will need to create a Heroku account and install the Heroku CLI, eg.
 `brew install heroku`.
 
 ```
-git clone git@github.com:rjoonas/heroku-docker-nginx-example.git
+git clone https://github.com/nik-iedaas/heroku-docker-nginx-example.git
 cd heroku-docker-nginx-example
-heroku login
-heroku container:login
-heroku container:push web
-heroku container:release web
+
+In default.conf.template we need update endpoints in proxy_pass
+
+for example :- location /url {
+    proxy_pass endpoint
+}
+
+build docker image :- sudo docker build -t checklistreverseproxy .
+
+for check images :- sudo docker images
+ 
+sudo heroku login
+sudo heroku container:login
+sudo heroku container:push web -a rocky-reaches-66468
+sudo heroku container:release web -a rocky-reaches-66468
 heroku open
 ```
