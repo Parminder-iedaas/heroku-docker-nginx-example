@@ -6,33 +6,35 @@ server {
     index  index.html index.htm;
   }
   location /authenticate {
-    proxy_pass  http://ec2-35-154-109-100.ap-south-1.compute.amazonaws.com:3000;
+    proxy_pass  http://ec2-3-110-148-71.ap-south-1.compute.amazonaws.com:3000;
   }
   location /verify {
-    proxy_pass  http://ec2-35-154-109-100.ap-south-1.compute.amazonaws.com:3000;
+    proxy_pass  http://ec2-3-110-148-71.ap-south-1.compute.amazonaws.com:3000;
   }
   location /checklistRequest {
-    proxy_pass  http://ec2-52-66-236-165.ap-south-1.compute.amazonaws.com:8080;
+    proxy_pass  http://ec2-13-235-70-89.ap-south-1.compute.amazonaws.com:8080;
   }
   location /checklist {
-    proxy_pass  http://ec2-15-206-173-93.ap-south-1.compute.amazonaws.com:8081;
+    proxy_pass  http://ec2-15-206-169-127.ap-south-1.compute.amazonaws.com:8081;
   }
   location /comment {
-    proxy_pass  http://ec2-15-206-173-93.ap-south-1.compute.amazonaws.com:8081;
+    proxy_pass  http://ec2-15-206-169-127.ap-south-1.compute.amazonaws.com:8081;
   }
   location /user {
-    proxy_pass   http://ec2-13-233-246-236.ap-south-1.compute.amazonaws.com:8082;
+    proxy_pass  http://ec2-13-234-75-222.ap-south-1.compute.amazonaws.com:8082;
   }
   location /task {
-    proxy_pass http://ec2-13-232-176-25.ap-south-1.compute.amazonaws.com:8083;
+    proxy_pass  http://ec2-13-232-176-25.ap-south-1.compute.amazonaws.com:8083;
   }
   location /notification {
-    proxy_pass  http://ec2-65-2-69-50.ap-south-1.compute.amazonaws.com:8084;
+    proxy_pass  http://ec2-3-110-166-57.ap-south-1.compute.amazonaws.com:8084;
   }
   location /report {
-    proxy_pass http://ec2-13-234-32-84.ap-south-1.compute.amazonaws.com:8085;
+    proxy_pass  http://ec2-13-233-11-171.ap-south-1.compute.amazonaws.com:8085;
   }
   location /space {
-    proxy_pass http://ec2-13-233-89-38.ap-south-1.compute.amazonaws.com:8086;
+    proxy_pass  http://ec2-15-207-84-92.ap-south-1.compute.amazonaws.com:8086;
   }
 }
+
+
