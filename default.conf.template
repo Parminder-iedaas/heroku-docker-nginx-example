@@ -36,8 +36,7 @@ server {
     proxy_pass   http://ec2-13-232-156-163.ap-south-1.compute.amazonaws.com:8085;
   }
   location /space {
-    proxy_pass   http://ec2-13-232-123-110.ap-south-1.compute.amazonaws.com:8086
-;
+    proxy_pass   http://ec2-13-232-123-110.ap-south-1.compute.amazonaws.com:8086;
   }
 }
 
