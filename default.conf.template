@@ -6,37 +6,37 @@ server {
     index  index.html index.htm;
   }
   location /authenticate {
-    proxy_pass http://ec2-35-154-158-101.ap-south-1.compute.amazonaws.com:3000;
+    proxy_pass http://ec2-52-66-165-186.ap-south-1.compute.amazonaws.com:3000;
   }
   location /verify {
-    proxy_pass http://ec2-35-154-158-101.ap-south-1.compute.amazonaws.com:3000;
+    proxy_pass http://ec2-52-66-165-186.ap-south-1.compute.amazonaws.com:3000;
   }
   location /checklistRequest {
-    proxy_pass http://ec2-35-154-241-254.ap-south-1.compute.amazonaws.com:8080;
+    proxy_pass http://ec2-3-110-167-120.ap-south-1.compute.amazonaws.com:8080;
   }
   location /category {
-    proxy_pass http://ec2-35-154-241-254.ap-south-1.compute.amazonaws.com:8080;
+    proxy_pass http://ec2-3-110-167-120.ap-south-1.compute.amazonaws.com:8080;
   }
   location /checklist {
-    proxy_pass http://ec2-13-234-20-81.ap-south-1.compute.amazonaws.com:8081;
+    proxy_pass http://ec2-13-232-49-197.ap-south-1.compute.amazonaws.com:8081;
   }
   location /comment {
-    proxy_pass http://ec2-13-234-20-81.ap-south-1.compute.amazonaws.com:8081;
+    proxy_pass http://ec2-13-232-49-197.ap-south-1.compute.amazonaws.com:8081;
   }
   location /user {
-    proxy_pass http://ec2-3-111-35-160.ap-south-1.compute.amazonaws.com:8082;
+    proxy_pass http://ec2-3-108-237-56.ap-south-1.compute.amazonaws.com:8082;
   }
   location /task {
-    proxy_pass http://ec2-13-126-26-176.ap-south-1.compute.amazonaws.com:8083;
+    proxy_pass http://ec2-52-66-201-181.ap-south-1.compute.amazonaws.com:8083;
   }
   location /notification {
-    proxy_pass http://ec2-13-232-104-117.ap-south-1.compute.amazonaws.com:8084;
+    proxy_pass http://ec2-3-110-104-212.ap-south-1.compute.amazonaws.com:8084;
   }
   location /report {
-    proxy_pass http://ec2-13-234-213-54.ap-south-1.compute.amazonaws.com:8085;
+    proxy_pass http://ec2-13-127-254-50.ap-south-1.compute.amazonaws.com:8085;
   }
   location /space {
-    proxy_pass http://ec2-3-111-169-114.ap-south-1.compute.amazonaws.com:8086;
+    proxy_pass http://ec2-65-0-104-95.ap-south-1.compute.amazonaws.com:8086;
   }
 }
 
