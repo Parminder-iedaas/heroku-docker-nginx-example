@@ -12,10 +12,10 @@ server {
     proxy_pass http://ec2-13-235-244-148.ap-south-1.compute.amazonaws.com:3000;
   }
   location /checklistRequest {
-    proxy_pass http://ec2-52-66-249-5.ap-south-1.compute.amazonaws.com:8080;
+    proxy_pass http://ec2-3-110-41-169.ap-south-1.compute.amazonaws.com:8080;
   }
   location /category {
-    proxy_pass http://ec2-52-66-249-5.ap-south-1.compute.amazonaws.com:8080;
+    proxy_pass http://ec2-3-110-41-169.ap-south-1.compute.amazonaws.com:8080;
   }
   location /checklist {
     proxy_pass http://ec2-13-233-130-123.ap-south-1.compute.amazonaws.com:8081;
